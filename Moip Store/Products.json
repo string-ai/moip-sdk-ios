@@ -1,0 +1,28 @@
+{
+    "products": [
+                 {
+                 "productId": "PRO-789",
+                 "name": "Brigadeiro Misto, com cobertura de chocolate preto.",
+                 "detail": "Saborosa mistura de brigadeiro branco com cobertura de chocolate preto.",
+                 "amount": 1000,
+                 "stock": 1,
+                 "image": "brigadeiro2"
+                 },
+                 {
+                 "productId": "PRO-123",
+                 "name": "Brigadeiro de Chocolate, coberto com raspas de chocolate meio-amargo.",
+                 "detail": "Delicioso brigadeiro de chocolate, coberto com raspas de chocolate meio-amargo.",
+                 "amount": 1000,
+                 "stock": 1,
+                 "image": "brigadeiro1"
+                 },
+                 {
+                 "productId": "PRO-123",
+                 "name": "Beijinho feito com brigadeiro branco e coberto com raspas de coco.",
+                 "detail": "Saborosíssimo beijinho, feito com brigadeiro branco e coberto com raspas de coco.",
+                 "amount": 1000,
+                 "stock": 1,
+                 "image": "beijinho"
+                 }
+                 ]
+}
