@@ -12,7 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
     NSString *path = [[NSBundle mainBundle] pathForResource:@"pk" ofType:@"txt"];
     NSString *publicKeyText = [NSString stringWithContentsOfFile:path
                                                         encoding:NSUTF8StringEncoding
@@ -22,6 +21,7 @@
                                key:YOUR_KEY
                          publicKey:publicKeyText
                        environment:MPKEnvironmentSANDBOX];
+
     
     return YES;
 }

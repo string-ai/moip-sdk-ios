@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Moip Pagamentos. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "MPKCardHolder.h"
 #import "MPKCreditCard.h"
 #import "MPKView.h"
@@ -29,7 +28,8 @@
 #pragma mark - Methods
 - (void) configureSitef;
 
-- (void) createOrder:(MPKOrder *)order
+- (void) createOrder:(NSURLRequest *)request
+               order:(MPKOrder *)order
              success:(void (^)(MPKOrder *order, NSString *moipOrderId))success
              failure:(void (^)(NSArray *errorList))failure;
 

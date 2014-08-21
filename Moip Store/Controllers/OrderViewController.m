@@ -156,16 +156,6 @@
 {
     [self showHud:@"Criando Pedido"];
     
-    MPKAddress *address = [MPKAddress new];
-    address.type = MPKAddressTypeBilling;
-    address.street = @"Av. Faria Lima";
-    address.streetNumber = @"99999";
-    address.district = @"Vila Olimpia";
-    address.city = @"São Paulo";
-    address.state = @"São Paulo";
-    address.country = @"BRA";
-    address.zipCode = @"09000000";
-    
     MPKCustomer *customer = [MPKCustomer new];
     customer.fullname = @"José Silva";
     customer.email = @"jose@gmail.com";
@@ -174,7 +164,6 @@
     customer.birthDate = [NSDate date];
     customer.documentType = MPKDocumentTypeCPF;
     customer.documentNumber = 99999999999;
-    customer.addresses = @[address];
     
     MPKAmount *amount = [MPKAmount new];
     amount.shipping = 1000;
@@ -199,11 +188,13 @@
     newOrder.items = mpkItems;
     newOrder.customer = customer;
     
-    [[MoipSDK session] createOrder:newOrder success:^(MPKOrder *order, NSString *moipOrderId) {
+    NSMutableURLRequest *rq = [NSMutableURLRequest new];
+    rq.HTTPMethod = @"POST";
+    rq.URL = [NSURL URLWithString:@"https://test.moip.com.br/v2/orders"];
 
+    [[MoipSDK session] createOrder:rq order:newOrder success:^(MPKOrder *order, NSString *moipOrderId) {
         NSLog(@"Order Created at Moip: %@", moipOrderId);
         [self createPayment:moipOrderId];
-        
     } failure:^(NSArray *errorList) {
         [self hideHud];
         [self showErrorFeedback:errorList];
