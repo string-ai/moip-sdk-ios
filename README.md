@@ -1,9 +1,25 @@
 ---
-title: Mobile SDK iOS (Beta)
-anchor: mobile
----
+# Mobile SDK iOS (Beta)
 
 Com o MoipSDK você pode receber pagamentos no seu aplicativo sem se preocupar com criptografia e de uma maneira fácil e simples.
+
+---
+
+##Release Notes
+
+###### Versão 1.0 Beta 2 - 20/08/2014
+* Adicionado suporte a criação de pedido (ORDER) usando o SDK;
+* Adicionado suporte a funcionalidade de compra usando o cartão salvo no Moip;
+* Correções de bugs e melhorias de performance e segurança;
+
+###### Versão 1.0 Beta 1 - 07/08/2014
+* Correções de bugs e melhorias de performance e segurança;
+* Ajustes para criação do pagamento com cartão criptografado
+
+
+
+##Como Usar o SDK
+
 
 Veja abaixo como integrar o seu app com o Moip.
 
