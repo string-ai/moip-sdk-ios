@@ -78,7 +78,7 @@ Para criar o pedido usando o MoipSDK, é necessario especificar o endpoint para 
     customer.phoneNumber = 999999999;
     customer.birthDate = [NSDate date];
     customer.documentType = MPKDocumentTypeCPF;
-    customer.documentNumber = 99999999999;
+    customer.documentNumber = @"99999999999";
     
     MPKAmount *amount = [MPKAmount new];
     amount.shipping = 1000;
