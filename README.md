@@ -7,6 +7,10 @@ Com o MoipSDK você pode receber pagamentos no seu aplicativo sem se preocupar c
 
 ##Release Notes
 
+###### Versão 1.0 Beta 3 - 08/10/2014
+* Bugfix: corrigido o problema de compatibilidade do CPF;
+* Melhorias de performance e outras correções de bugs;
+
 ###### Versão 1.0 Beta 2 - 20/08/2014
 * Adicionado suporte a criação de pedido (ORDER) usando o SDK;
 * Adicionado suporte a funcionalidade de compra usando o cartão salvo no Moip;
@@ -74,7 +78,7 @@ Para criar o pedido usando o MoipSDK, é necessario especificar o endpoint para 
     customer.phoneNumber = 999999999;
     customer.birthDate = [NSDate date];
     customer.documentType = MPKDocumentTypeCPF;
-    customer.documentNumber = 99999999999;
+    customer.documentNumber = @"99999999999";
     
     MPKAmount *amount = [MPKAmount new];
     amount.shipping = 1000;
