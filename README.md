@@ -63,7 +63,11 @@ O primeiro passo iniciar o SDK passando seu Token, Key, Chave Publica RSA e o en
 
 ### 2. Criar o pedido (ORDER)
 
-Para criar o pedido usando o MoipSDK, é necessario especificar o endpoint para criação do pedido no seu ecommerce, e o seu ecommerce deve repassar o json de order para o Moip.
+Para facilitar a integração do seu app com o Moip, nós disponibilizamos, no SDK, um método para fazer a criação do pedido no seu ecommerce e também no Moip.
+
+O método ```createOrder``` vai realizar uma requisição POST para o endereço do seu ecommerce para criar o pedido na sua loja, após isso, a sua loja faz o POST para a Api Moip como o mesmo JSON que você recebeu do SDK.
+
+Veja como usar a criação de pedidos pelo SDK:
 
 ```objective-c
 
