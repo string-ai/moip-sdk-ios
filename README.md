@@ -78,25 +78,17 @@ Para criar o pedido usando o MoipSDK, é necessario especificar o endpoint para 
     
     MPKAmount *amount = [MPKAmount new];
     amount.shipping = 1000;
-    amount.addition = 0;
-    amount.discount = 0;
     
-    NSMutableArray *mpkItems = [NSMutableArray new];
-    for (Product *p in self.productList)
-    {
-        MPKItem *newItem = [MPKItem new];
-        newItem.product = p.name;
-        newItem.quantity = p.quantity;
-        newItem.detail = p.detail;
-        newItem.price = p.amount;
-        
-        [mpkItems addObject:newItem];
-    }
+	MPKItem *newItem = [MPKItem new];
+    newItem.product = @"Macbook Pro 13 polegadas";
+    newItem.quantity = 1;
+    newItem.detail = @"Macbook Pro 13 polegadas";
+    newItem.price = 99999;
     
     MPKOrder *newOrder = [MPKOrder new];
     newOrder.ownId = @"sandbox_OrderID_xxx";
     newOrder.amount = amount;
-    newOrder.items = mpkItems;
+    newOrder.items = @[newItem];
     newOrder.customer = customer;
     
     NSMutableURLRequest *rq = [NSMutableURLRequest new];
