@@ -17,8 +17,8 @@
                                                         encoding:NSUTF8StringEncoding
                                                            error:nil];
     
-    [MoipSDK startSessionWithToken:YOUR_TOKEN
-                               key:YOUR_KEY
+    [MoipSDK startSessionWithToken:@"01010101010101010101010101010101"
+                               key:@"ABABABABABABABABABABABABABABABABABABABAB"
                          publicKey:publicKeyText
                        environment:MPKEnvironmentSANDBOX];
 

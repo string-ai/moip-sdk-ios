@@ -163,7 +163,7 @@
     customer.phoneNumber = 999999999;
     customer.birthDate = [NSDate date];
     customer.documentType = MPKDocumentTypeCPF;
-    customer.documentNumber = @"99999999999";
+    customer.documentNumber = @"36021561848";
     
     MPKAmount *amount = [MPKAmount new];
     amount.shipping = 1000;

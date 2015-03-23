@@ -12,6 +12,8 @@
 	<dict>
 		<key>6A211C80E34CE6F55CD73BFFA80544EFBA2249EB</key>
 		<string>github.com:moip/ios-sdk-sample.git</string>
+		<key>BFD230DD4D042318BCA4652239BEE0AA99C4A4C3</key>
+		<string>github.com:moip/ios-sdk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Moip Store.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>6A211C80E34CE6F55CD73BFFA80544EFBA2249EB</key>
 		<string>../..</string>
+		<key>BFD230DD4D042318BCA4652239BEE0AA99C4A4C3</key>
+		<string>../../../ios-sdk</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:moip/ios-sdk-sample.git</string>
@@ -28,6 +32,14 @@
 	<string>6A211C80E34CE6F55CD73BFFA80544EFBA2249EB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BFD230DD4D042318BCA4652239BEE0AA99C4A4C3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-sdk</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
