@@ -1,11 +1,18 @@
 ---
-# Mobile SDK iOS (Beta)
+# Mobile SDK iOS
 
-Com o MoipSDK você pode receber pagamentos no seu aplicativo sem se preocupar com criptografia e de uma maneira fácil e simples.
+Com o SDK para venda online do Moip, você pode receber pagamentos no seu aplicativo sem se preocupar com criptografia e de uma maneira fácil e simples.
 
 ---
 
 ##Release Notes
+
+###### Versão 1.0.1 - 23/03/2015
+* Bugfix: corrigido o problema de compatibilidade do CPF na classe MPKCustomer;
+* Melhorias de performance e outras correções de bugs;
+
+###### Versão 1.0 - 01/01/2015
+* Release versão 1.0
 
 ###### Versão 1.0 Beta 3 - 08/10/2014
 * Bugfix: corrigido o problema de compatibilidade do CPF;
